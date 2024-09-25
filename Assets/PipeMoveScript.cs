@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PipeMoveScript : MonoBehaviour{
-    public float moveSpeed = 1;
-    public float deadZone = -31;
+    public float moveSpeed = 4;
+    public float deadZone = -25;
     // Start is called before the first frame update
     void Start(){
         

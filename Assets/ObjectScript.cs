@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ObjectScript : MonoBehaviour{
     public Rigidbody2D myRigitBody;
@@ -15,5 +16,7 @@ public class ObjectScript : MonoBehaviour{
         if (Input.GetKeyDown(KeyCode.Space)){
             myRigitBody.velocity = Vector2.up * flapStrength;
         }
+
+        transform.Rotate(0, 0, 90 * Time.deltaTime);
     }
 }
